@@ -1,0 +1,47 @@
+{
+  "name": "nocobase-plugin-postgres-connector",
+  "version": "0.1.0",
+  "description": "PostgreSQL and MySQL connector plugin for NocoBase",
+  "main": "lib/server.js",
+  "files": [
+    "lib",
+    "client.js",
+    "server.js"
+  ],
+  "keywords": [
+    "nocobase",
+    "plugin",
+    "postgres",
+    "mysql",
+    "database",
+    "connector"
+  ],
+  "author": "NocoBase Plugin Developer",
+  "license": "MIT",
+  "dependencies": {
+    "pg": "^8.11.3",
+    "mysql2": "^3.6.5",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/pg": "^8.10.9",
+    "@types/jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "dev": "ts-node src/server/index.ts"
+  },
+  "peerDependencies": {
+    "@nocobase/server": "*",
+    "@nocobase/client": "*",
+    "@nocobase/database": "*"
+  }
+} 
